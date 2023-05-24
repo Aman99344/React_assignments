@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+
+    <div id="root" style="width: 62%; margin: auto; font-size: 19px;"></div>
+
+    <script>
+
+        const heading = ("div", null, [
+            
+            React.createElement("h1", null, "learn web development"),
+            React.createElement("div", null, "Welcome to the MDN learning area. This set of articles aims to guide complete beginners to web development with all that they need to start coding websites."),
+            React.createElement("div", null, [
+                React.createElement("p", null, ['The aim of this area of MDN is not to take you from "beginner" to "expert" but to take you from "beginner" to "comfortable." From there, you should be able to start making your way, learning from the rest of MDN and other intermediate to advanced resources that assume a lot of previous knowledge.',
+
+                    React.createElement("a", {
+                        href: "the rest of MDN",
+                        style: { margin: "10px" }
+                    }, "the rest of MDN"),
+
+                    React.createElement("span", null, "and other intermediate to advanced resources that assume a lot of previous knowledge.")
+
+                ]),
+
+
+            ]),
+
+            React.createElement("div", null, "If you are a complete beginner, web development can be challenging — we will hold your hand and provide enough detail for you to feel comfortable and learn the topics properly. You should feel at home whether you are a student learning web development (on your own or as part of a class), a teacher looking for class materials, a hobbyist, or someone who just wants to understand more about how web technologies work.")
+
+
+        ])
+
+
+
+
+        const root = ReactDOM.createRoot(document.getElementById("root"))
+        root.render(heading)
+
+    </script>
+
+</body>
+
+</html>

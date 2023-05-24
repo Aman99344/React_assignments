@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body style="width: 40%; margin: auto; padding: 30px; font-size: 17px;">
+
+    <div id="root"></div>
+
+    <script>
+
+        const div1 = React.createElement("div", null,
+            [React.createElement("h1", null, "Topic covered"),
+            React.createElement("p", null, "The following is a list of all the topics we cover in the MDN learning area.")
+            ])
+
+        const div2 = React.createElement("div", null, [
+            React.createElement("a", {
+                href: "Getting saarted with web"
+            }, "Getting saarted with web"),
+
+            React.createElement("p", null, "Provides a practical introduction to web development for complete beginners.")
+        ])
+
+        const div3 = React.createElement("div", null, [
+            React.createElement("a", {
+                href: "HTML- Structuring the web"
+            }, "HTML- Structuring the web"),
+
+            React.createElement("p", null, "HTML is the language that we use to structure the different parts of our contentand define what their meaning or purpose is. This topic teaches HTML in details")
+
+        ])
+
+
+        const div4 = React.createElement("div", null, [
+            React.createElement("a", {
+                href: "CSS- Styling the web"
+            }, "CSS- Styling the web"),
+
+           React.createElement("p", null, "CSS is the language that we use to control our web content's style and layout, aswell as adding behavior like animation. This topic provides comprehensive coverage of CSS.")
+        ])
+
+        const root = ReactDOM.createRoot(document.getElementById("root"))
+        root.render([div1, div2, div3, div4])
+
+    </script>
+
+</body>
+
+</html>

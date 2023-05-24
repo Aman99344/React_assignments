@@ -1,0 +1,35 @@
+
+.container{
+    text-align: center;
+}
+
+input {
+    width: 40%;
+    height: 5vh;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(161, 243, 220);
+}
+
+@media only screen and (max-width: 426px) {
+    input{
+        width: 72%;
+        height: 4vh;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    input{
+        width: 72%;
+        height: 4vh;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+
+    input{
+        width: 50%;
+    }
+  }
+
+ 

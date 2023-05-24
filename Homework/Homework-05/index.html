@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+
+    <script type="text/babel">
+
+        function Header() {
+            return <div style={{ backgroundColor: "#cc0000", display: "flex", justifyContent: "space-between", marginTop: "25px" }}>
+
+                <div style={{ width: "40%", paddingLeft: "35px", color: "white" }}>
+                    <h2>Coding made simple</h2>
+                </div>
+
+                <div style={{ width: "40%", display: "flex", justifyContent: "space-around", alignItems: "center" }}>
+                    <a style={{ color: "white", textDecoration: "none", fontSize: "18px" }} href="#">Bootstrap</a>
+                    <a style={{ color: "white", textDecoration: "none", fontSize: "18px" }} href="#">Theme</a>
+                    <a style={{ color: "white", textDecoration: "none", fontSize: "18px" }} href="#">blog</a>
+                </div>
+
+            </div>
+        }
+
+
+        function Main() {
+        return   <div style={{backgroundColor: "#eeeeee", height:"540px", marginTop: "50px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+
+            <div>
+
+                <h1>Cutomize Bootstrap Navbar</h1>
+                <p>Easy way to change navbar background. text and hover link color in bootstrap....</p>
+
+                </div>
+                
+            </div>
+        }
+
+
+
+        function App() {
+            return <div>
+                <Header />
+                <Main />
+
+            </div>
+
+
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById("root"))
+        root.render(<App />)
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        var card = <div style={{
+            width: "25%",
+            height: "450px",
+            boxShadow: "0 0 10px black",
+            margin: "auto",
+            marginTop: "70px",
+            textAlign: "center"
+
+        }}>
+            <img
+                src="https://th.bing.com/th/id/OIP.oBt8BmQmYBadtBZkpGkenQAAAA?pid=ImgDet&w=178&h=178&c=7&dpr=1.3"
+                width="100%"
+                height="45%"
+            />
+
+            <h1>Dima Blover</h1>
+            <p style={{ color: "#919191" }}>UI/UX Designer</p>
+
+            <div style={{
+                display: "flex",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+            }}>
+                <div>
+                    <h2>26</h2>
+                    <p style={{color: "#919191"}}>Shoot</p>
+                </div>
+
+                <div>
+                    <h2>26</h2>
+                    <p style={{color: "#919191"}}>Shoot</p>
+                </div>
+
+                <div>
+                    <h2>26</h2>
+                    <p style={{color: "#919191"}}>Shoot</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        const root = ReactDOM.createRoot(document.getElementById("root"))
+        root.render(card)
+
+
+    </script>
+
+</body>
+
+</html>

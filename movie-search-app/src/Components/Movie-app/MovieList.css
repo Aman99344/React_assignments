@@ -1,0 +1,55 @@
+.imageContainer{
+    width: 100%;
+    height: 40vh;
+}
+
+.imageContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.card{
+    margin: 0 20px 45px 20px;
+    width: 21%;
+    height: 53vh;
+    box-shadow: 0 0 5px black;
+    border-radius: 4px;
+}
+
+.ratingTitle{
+    width: 96%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    width: 100%;
+    background-color: rgb(56, 132, 56);
+    height: 4vh;
+    border-style: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+}
+
+@media only screen and (max-width: 426px) {
+    .card{
+        width: 85%;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .card{
+        width: 40%;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+
+    .card{
+        width: 20%;
+    }
+  }
