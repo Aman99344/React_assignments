@@ -1,0 +1,25 @@
+
+.mainContainer{
+    height: 93vh;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Mountains-1412683.png/1200px-Mountains-1412683.png?20221222182234");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContainer >  p{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.mainContainer > p > span {
+    color: red;
+}
+
+.mainContainer h1{
+    font-size: 50px;
+    margin-top: 30px;
+}
+

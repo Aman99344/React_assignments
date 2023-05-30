@@ -1,0 +1,35 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    background-color: black;
+}
+
+.logo{
+    width: 60%;
+    margin-left: 10px;
+    color: white;
+   /* background-color: brown; */
+}
+
+.nav-Items{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.nav-Items a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.home{
+   background-color: #fbd2d7;
+   color: black !important;
+   padding: 4px 8px;
+   border-radius: 3px;
+}
