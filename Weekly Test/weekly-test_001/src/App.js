@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar/Navbar.jsx';
 import Main from './Components/Main/MainSec/Main.jsx';
 import Feature from './Components/Main/FeatureSec/Feature';
 import Achievements from './Components/Main/Achievements/Achievements';
+import Footer from './Components/Footer/Footer';
 import { faDesktop, faUser, faRecycle, faBriefcase, faAutomobile, faTrophy} from "@fortawesome/free-solid-svg-icons";
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
@@ -24,7 +25,7 @@ function App() {
         <Achievements num={349} para= "Product Sold" icons={faAutomobile}/>
         <Achievements num={2456} para= "Twitter Fans" icons={faTwitter}/>
       </div>
-        
+        <Footer />
     </div>
   );
 }
