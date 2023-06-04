@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.acchievments-Container{
+    width: 100%;
+    height: 55vh;
+    background-image: url("https://creativthemes.com/theme-demo/flex-business-pro/wp-content/themes/flex-business-pro/assets/images/default-header.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

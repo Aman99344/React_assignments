@@ -1,0 +1,35 @@
+
+.navbar{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   /* border: 2px solid red; */
+   height: 12vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.title{
+  /* border: 2px solid green; */
+  width: 40%;
+  padding-left: 70px;
+}
+
+.nav-items{
+   /* border: 2px solid blue; */
+   width: 60%;
+   display: flex;
+   justify-content: space-evenly;
+   margin-left: 250px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-weight: 550;
+}
+
+.nav-items .blue{
+   color: #81b6fb;
+
+}

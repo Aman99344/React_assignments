@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "name": "Rajesh Patel",
+      "gender": "male"
+    },
+    {
+      "id": 2,
+      "name": "Rajiv Patel",
+      "gender": "male"
+    },
+    {
+      "id": 3,
+      "name": "Sneha Jaiswal",
+      "gender": "female"
+    },
+    {
+      "id": 4,
+      "name": "Ayushi Verma",
+      "gender": "female"
+    },
+    {
+      "name": "aman",
+      "gender": "male",
+      "id": 5
+    },
+    {
+      "name": "hello",
+      "gender": "male",
+      "id": 13
+    }
+  ]
+}
