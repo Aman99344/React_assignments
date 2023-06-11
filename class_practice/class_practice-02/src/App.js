@@ -1,4 +1,4 @@
-// import User from './Components/User/User';
+import User from './Components/User/User';
 // import Product from './Components/Json-practice/Product';
 import AddUser from './Components/Json-P002/AddUser';
 import './App.css';
@@ -6,9 +6,9 @@ import './App.css';
 function App() {
   return (
   <>
-  {/* <User /> */}
+  <User />
   {/* <Product /> */}
-  <AddUser />
+  {/* <AddUser /> */}
   </>
   );
 }

@@ -40,11 +40,11 @@ const Pagination = () => {
         </table>
       <div style={{marginTop: "20px"}}>
 
-      <button onClick={()=>{
+      <button disabled={page === 1} onClick={()=>{
             setPage(page - 1)
         }}>prv</button>
         <span>{page}</span>
-        <button onClick={()=>{
+        <button disabled={page === 5} onClick={()=>{
             setPage(page + 1)
         }}>next</button>
 
