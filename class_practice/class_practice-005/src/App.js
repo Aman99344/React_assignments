@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import Navbar from "./Components/Navbar/Navbar"
+import Login from "./Components/ContextProvider/Login";
+import Home from "./Components/ContextProvider/Home";
+import { useContext } from "react";
+import AuthContext from "./Components/ContextProvider/Context";
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+   const {isLoggedIn} = useContext(AuthContext)
+
+  // const [isLoggedIn, setIsLoggedIn] = useState(false)
+  
+  // const login = () =>{
+  //   setIsLoggedIn(true)
+  // }
+
+  // const logout =()=>{
+  //   setIsLoggedIn(false)
+  // }
+
+//   return (
+//     <div className="App">
+//         <Navbar isLoggedIn={isLoggedIn} logout={logout} />
+//        {
+//         isLoggedIn ? <Home /> : <Login login={login} />
+//        }
+//     </div>
+//   );
+// }
+
+return (
+  <div className="App">
+      <Navbar />
+     {
+      isLoggedIn ? <Home /> : <Login />
+     }
+  </div>
+);
 }
+
 
 export default App;
