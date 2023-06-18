@@ -1,7 +1,20 @@
 import React from 'react'
 import { Card, CardBody, Image, Stack, Heading, Text, Divider,  ButtonGroup, Button, CardFooter } from '@chakra-ui/react'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
-const ProductList = () => {
+const ProductList = ({inputdata,setInputData }) => {
+
+  const[data, setData] = useState([])
+  
+  useEffect(()=>{
+    axios.get(`https://fakestoreapi.com/products/category/${inputdata}`)
+    .then((res)=>{
+      setData(res.data)
+    })
+  },[inputdata])
+  
+
   return (
     <Card bg="#111111" color="white"  boxShadow="0 0 6px grey"  maxW='280px' h="fit-content" m="20px 50px">
     <CardBody>
@@ -37,3 +50,5 @@ const ProductList = () => {
 }
 
 export default ProductList;
+
+
