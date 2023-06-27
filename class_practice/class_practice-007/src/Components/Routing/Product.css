@@ -1,0 +1,25 @@
+.productContainer{
+   width: 70%;
+   box-shadow: 0 0 10px black;
+   margin: 50px auto;
+   height: 400px;
+   display: flex;
+}
+
+.productCategory{
+  width: 30%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+ 
+}
+
+.productCategory a{
+    color: white;
+    text-decoration: none;
+}
+
+.productDetails{
+    width: 70%;
+}
